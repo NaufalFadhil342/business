@@ -1,0 +1,256 @@
+.contactPage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.contactPage .header {
+  width: 100%;
+  height: auto;
+}
+
+.contactPage .header div {
+  width: 100%;
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contactPage .header div .backyard {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(26, 26, 26, 0.3), #1a1a1a);
+}
+
+.contactPage .body {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  display: flex;
+  gap: 2rem;
+}
+
+.contactPage .body .schedule {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactPage .body .schedule .contact-us,
+.contactPage .body .schedule .openingHours {
+  width: 100%;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactPage .body .schedule .contact-us .contactUs-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactPage .body .schedule .contact-us .contactUs-content div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactPage .body .schedule .contact-us .contactUs-content div:first-child {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.contactPage .body .schedule .contact-us .contactUs-content div:first-child svg {
+  font-size: 35px;
+  color: #1363df;
+  transform: translateY(-5px);
+}
+
+.contactPage .body .schedule .contact-us .contactUs-content div svg,
+.contactPage .body .schedule .openingHours .clock svg {
+  font-size: 20px;
+  color: #1363df;
+}
+
+.contactPage .body .schedule .openingHours .clock {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.contactPage .body .schedule .openingHours .clock .hours {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactPage .body form {
+  flex: 70%;
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem;
+  background-color: white;
+  border: 1px solid silver;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contactPage .body form .name,
+.contactPage .body form .email,
+.contactPage .body form .message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactPage .body form .name section {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.contactPage .body form .name section .first,
+.contactPage .body form .name section .last {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.contactPage .body form .name section .first input,
+.contactPage .body form .name section .last input,
+.contactPage .body form .email input {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 0 0 10px;
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  outline-color: silver;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+
+.contactPage .body form .name section .first label,
+.contactPage .body form .name section .last label {
+  font-size: small;
+  font-weight: 500;
+}
+
+.contactPage .body form .name label,
+.contactPage .body form .email label,
+.contactPage .body form .message label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.contactPage .body form .message textarea {
+  width: 100%;
+  height: 6rem;
+  padding: 10px 0 0 10px;
+  margin-bottom: 0.5rem;
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  outline-color: silver;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+.contactPage .body form .name .first p,
+.contactPage .body form .name .last p,
+.contactPage .body form .email p,
+.contactPage .body form .message p {
+  color: red;
+  font-size: small;
+}
+
+.contactPage .body form .action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contactPage .body form .action .button {
+  font-size: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+  .contactPage .body .schedule .contact-us .contactUs-content div:first-child svg {
+    font-size: 43px;
+    transform: translateY(-11px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactPage .body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contactPage .body .schedule {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contactPage .body .schedule .contact-us .contactUs-content div:first-child svg {
+    font-size: 35px;
+    transform: translateY(-7px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactPage .body .schedule .contact-us .contactUs-content div:first-child svg {
+    font-size: 40px;
+    transform: translateY(-10px);
+  }
+
+  .contactPage .body {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contactPage .body .schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contactPage .body .schedule .contact-us .contactUs-content div:first-child svg {
+    font-size: 23px;
+    transform: translateY(0);
+  }
+
+  .contactPage .body form .name section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactPage .body form .name section .first,
+  .contactPage .body form .name section .last {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contactPage .body .schedule .contact-us .contactUs-content div:first-child svg {
+    font-size: 35px;
+    transform: translateY(-6.5px);
+  }
+}

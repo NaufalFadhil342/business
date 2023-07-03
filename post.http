@@ -1,0 +1,27 @@
+###
+GET http://localhost:3001/posts HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "At the office",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, rerum sapiente! Delectus quas architecto rem?"
+}
+
+###
+
+PUT http://localhost:3001/posts/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "A dat at the office"
+}
+
+###
+
+DELETE http://localhost:3001/posts/3 HTTP/1.1
+Content-Type: application/json

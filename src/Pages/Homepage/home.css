@@ -1,0 +1,966 @@
+.homePage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+/* header */
+
+.homePage .header {
+  width: 100%;
+  height: auto;
+}
+
+.homePage .header .image {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.homePage .header .image .layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 26, 26, 0.5);
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.homePage .header .image .layer h1 {
+  color: white;
+  font-size: 4em;
+}
+
+.homePage .header .image .layer p {
+  width: 70%;
+  color: white;
+  font-size: 20px;
+  margin: -8px 0 0 0;
+}
+
+.homePage .header .image .layer .button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* body */
+
+.homePage .body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.homePage .body .aboutus {
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.homePage .body .aboutus .header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.homePage .body .aboutus .header .tagline {
+  color: #1363df;
+  text-transform: uppercase;
+}
+
+.homePage .body .aboutus .header h1 {
+  width: 70%;
+  font-size: 3em;
+}
+
+.homePage .body .aboutus .header h1 i,
+.homePage .body .aboutus .header h1 span {
+  color: #1363df;
+}
+
+.homePage .body .aboutus .header p {
+  width: 70%;
+  font-size: 18px;
+}
+
+.homePage .body .aboutus .body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.homePage .body .aboutus .body .project {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.homePage .body .aboutus .body .project .image,
+.homePage .body .aboutus .body .project .content {
+  flex: 50%;
+}
+
+.homePage .body .aboutus .body .project .image div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homePage .body .aboutus .body .project .content {
+  width: 100%;
+  padding: 3rem 0 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.homePage .body .aboutus .body .project .content .design,
+.homePage .body .aboutus .body .project .content .develop,
+.homePage .body .aboutus .body .project .content .photograph,
+.homePage .body .aboutus .body .project .content .strategy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.homePage .body .aboutus .body .project .content .design .percentase,
+.homePage .body .aboutus .body .project .content .develop .percentase,
+.homePage .body .aboutus .body .project .content .photograph .percentase,
+.homePage .body .aboutus .body .project .content .strategy .percentase {
+  width: 100%;
+  height: 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+.homePage .body .aboutus .body .project .content .design .percentase div,
+.homePage .body .aboutus .body .project .content .develop .percentase div,
+.homePage .body .aboutus .body .project .content .photograph .percentase div,
+.homePage .body .aboutus .body .project .content .strategy .percentase div {
+  background-color: #1363df;
+  padding: 0 10px 0 0;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.homePage .body .reward {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.homePage .body .reward .image {
+  position: relative;
+  z-index: 1;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  width: 100%;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homePage .body .reward .backyard {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 26, 26, 0.65);
+  padding: 5rem 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.homePage .body .reward .backyard .list {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.homePage .body .reward .backyard .list i {
+  color: #1363df;
+  font-size: 40px;
+}
+
+.homePage .body .reward .backyard .list h1 {
+  font-size: 60px;
+}
+
+.homePage .body .service {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.homePage .body .service .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homePage .body .service .header h1 {
+  font-size: 3em;
+}
+
+.homePage .body .service .header h1 span {
+  color: #1363df;
+}
+
+.homePage .body .service .header p {
+  font-size: 18px;
+}
+
+.homePage .body .service .body {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.homePage .body .service .body .list {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homePage .body .service .body .list i {
+  width: 100px;
+  height: 100px;
+  font-size: 45px;
+  background-color: transparent;
+  border: 3px solid #1363df;
+  color: #1363df;
+  border-radius: 50%;
+  margin: 0 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage .body .service .body .list i:hover {
+  width: 110px;
+  height: 110px;
+  border: none;
+  font-size: 50px;
+  background-color: #1363df;
+  color: white;
+  transition: all 0.25s ease-in-out;
+}
+
+.homePage .body .service .body .list p {
+  line-height: 1.5em;
+  color: #aaa;
+}
+
+.homePage .body .benefit {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.homePage .body .benefit .benefit-content {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(26, 26, 26, 0.85);
+  padding: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.homePage .body .benefit .benefit-content .header {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.homePage .body .benefit .benefit-content .header h1 {
+  font-size: 3em;
+}
+
+.homePage .body .benefit .benefit-content .header h1 span {
+  color: #1363df;
+}
+
+.homePage .body .benefit .benefit-content .body {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4rem;
+  column-gap: 2rem;
+}
+
+.homePage .body .benefit .benefit-content .body .list {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.homePage .body .benefit .benefit-content .body .list i {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #1363df;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage .body .team {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.homePage .body .team .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.homePage .body .team .header h1 {
+  font-size: 3em;
+}
+
+.homePage .body .team .header h1 span {
+  color: #1363df;
+}
+
+.homePage .body .team .header p {
+  font-size: 18px;
+}
+
+.homePage .body .team .body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.homePage .body .team .body .list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.homePage .body .team .body .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #1a1a1a;
+  overflow: hidden;
+}
+
+.homePage .body .team .body .image div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homePage .body .team .body .list:first-child .image div {
+  background-position: -3rem, 0;
+}
+
+.homePage .body .team .body .list:nth-child(2) .image div {
+  background-position: -3.7rem, 0;
+}
+
+.homePage .body .team .body .list:last-child .image div {
+  background-position: -1.75rem, 0;
+}
+
+.homePage .body .team .body .worker {
+  text-align: center;
+  color: #aaa;
+}
+
+.homePage .body .team .body .worker .name {
+  font-size: 1.25em;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.homePage .body .workus {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.homePage .body .workus .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.homePage .body .workus .header h1 {
+  font-size: 3em;
+}
+
+.homePage .body .workus .header h1 span {
+  color: #1363df;
+}
+
+.homePage .body .workus .header p {
+  font-size: 18px;
+}
+
+.homePage .body .workus .body {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+}
+
+.homePage .body .workus .body a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.homePage .body .workus .body a .photos {
+  width: 15rem;
+  height: 15rem;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.homePage .body .workus .body a .photos div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 2rem 2rem 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.homePage .body .workus .body a .photos div h3 {
+  width: 100%;
+  height: 3rem;
+  display: none;
+  color: #1a1a1a;
+}
+
+.homePage .body .workus .body a .photos:hover div h3 {
+  background-color: rgb(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage .body .comment {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.homePage .body .comment .image {
+  width: 100%;
+  height: 30rem;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.homePage .body .comment .contents {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  background-color: rgb(26, 26, 26, 0.65);
+  padding: 2.5rem 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homePage .body .comment .contents .feeds {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homePage .body .comment .contents .feeds i {
+  width: fit-content;
+  height: fit-content;
+  font-size: 3em;
+  color: rgb(224, 224, 224, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.homePage .body .comment .contents .feeds .feeds-item {
+  width: 100%;
+  height: 100%;
+}
+
+.homePage .body .comment .contents .feeds .feeds-item .item {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homePage .body .comment .contents .feeds .feeds-item .item .text {
+  font-size: 2em;
+  text-align: center;
+}
+
+.homePage .body .comment .contents .feeds .feeds-item .item .user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homePage .body .comment .contents .feeds .dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.homePage .body .comment .contents .feeds .dots .dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.homePage .body .comment .contents .feeds .dots .dot div {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.homePage .body .comment .contents .feeds .dots .dot .active {
+  background-color: #e0e0e0;
+}
+
+.homePage .body .price {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.homePage .body .price .header h1 {
+  font-size: 3em;
+}
+
+.homePage .body .price .header h1 span {
+  color: #1363df;
+}
+
+.homePage .body .price .header {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homePage .body .price .body {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.homePage .body .price .body .priceList {
+  width: 18rem;
+  height: 25rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.homePage .body .price .body .priceList .amount {
+  width: 100%;
+  color: #1363df;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.homePage .body .price .body .priceList .amount h1 {
+  font-size: 2.8em;
+}
+
+.homePage .body .price .body .priceList .plan {
+  width: 100%;
+  margin: -0.5rem 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.homePage .body .price .body .priceList .feature {
+  width: 100%;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homePage .body .price .body .priceList .action {
+  width: 100%;
+  margin: 0 0 0.5rem 0;
+}
+
+.homePage .body .price .body .priceList .action .button {
+  width: 100%;
+  background-color: white;
+  color: #1363df;
+  border: 1px solid #1363df;
+  text-transform: uppercase;
+}
+
+.homePage .body .price .body .priceList .action .button a {
+  text-decoration: none;
+  color: #1363df;
+}
+
+.homePage .body .price .body .priceList .action .button:hover {
+  background-color: #f0f0f0;
+}
+
+.homePage .body .price .body .priceList:nth-child(2) .action .button {
+  width: 100%;
+  background-color: #1363df;
+  color: white;
+  text-transform: uppercase;
+}
+
+.homePage .body .price .body .priceList:nth-child(2) .action .button a {
+  color: white;
+  text-decoration: none;
+}
+
+.homePage .body .price .body .priceList:nth-child(2) .action .button:hover {
+  background-color: #0356d3;
+}
+
+.homePage .body .premium {
+  width: 100%;
+  height: auto;
+}
+
+.homePage .body .premium .premium-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 26, 26, 0.5);
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homePage .body .premium .premium-content .content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.homePage .body .premium .premium-content .content h1 {
+  font-size: 3em;
+}
+
+.homePage .body .premium .premium-content .content h1 i {
+  color: #1363df;
+}
+
+.homePage .body .premium .premium-content .action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.homePage .body .premium .premium-content .action .button a {
+  color: white;
+  text-decoration: none;
+}
+
+.homePage .body .client {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+}
+
+.homePage .body .client .logo-client {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.homePage .body .client .logo-client img {
+  width: 125px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .homePage .header .image .layer {
+    align-items: center;
+  }
+
+  .homePage .header .image .layer h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .homePage .header .image .layer p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .homePage .body .aboutus .header h1 {
+    width: 100%;
+    font-size: 2.5em;
+  }
+
+  .homePage .body .aboutus .header p {
+    width: 100%;
+  }
+
+  .homePage .body .aboutus .body .project {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .homePage .body .aboutus .body .project .image div {
+    width: 100%;
+    height: 22rem;
+  }
+
+  .homePage .body .aboutus .body .project .content {
+    padding: 0;
+  }
+
+  .homePage .body .reward .image {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .homePage .body .reward .backyard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homePage .body .benefit .benefit-content {
+    width: 100%;
+  }
+
+  .homePage .body .benefit .benefit-content .header h1,
+  .homePage .body .workus .header h1 {
+    font-size: 2.5em;
+  }
+
+  .homePage .body .benefit .benefit-content .body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .homePage .body .workus .header {
+    padding: 0 10%;
+  }
+
+  .homePage .body .workus .body a {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homePage .body .service .header h1 {
+    font-size: 2.5em;
+  }
+
+  .homePage .body .service .body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .homePage .body .benefit {
+    padding: 2.5rem 0;
+    box-shadow: 0 0 5px rgba(26, 26, 26, 0.2);
+  }
+
+  .homePage .body .team .header h1,
+  .homePage .body .price .header h1,
+  .homePage .body .premium .premium-content .content h1 {
+    font-size: 2.5em;
+  }
+
+  .homePage .body .team .body {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .homePage .body .comment .image {
+    width: 100%;
+    height: 35rem;
+  }
+
+  .homePage .body .price .body {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homePage .body .price .body .priceList {
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .homePage .body .client .logo-client {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .homePage .body .reward .image {
+    width: 100%;
+    height: 60rem;
+  }
+
+  .homePage .body .reward .backyard {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .homePage .body .service .body {
+    grid-template-columns: 1fr;
+  }
+
+  .homePage .body .price .body {
+    padding: 0 0;
+  }
+
+  .homePage .body .comment .image {
+    width: 100%;
+    height: 40rem;
+  }
+}

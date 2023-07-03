@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "title": "A Day at The Office",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias atque animi distinctio dolorum odio dolorem dignissimos itaque sint, numquam sunt quod soluta aperiam. Eaque omnis, rem ratione harum facilis porro.",
+      "id": 1
+    },
+    {
+      "title": "Don't Miss Our Next Event`",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias atque animi distinctio dolorum odio dolorem dignissimos itaque sint, numquam sunt quod soluta aperiam. Eaque omnis, rem ratione harum facilis porro.",
+      "id": 2
+    },
+    {
+      "title": "Just a Crowded Street",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias atque animi distinctio dolorum odio dolorem dignissimos itaque sint, numquam sunt quod soluta aperiam. Eaque omnis, rem ratione harum facilis porro.",
+      "id": 3
+    }
+  ]
+}
