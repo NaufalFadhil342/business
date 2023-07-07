@@ -1,39 +1,15 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { FiDelete } from 'react-icons/fi';
+import { BlogContext } from '../../Context/blogContext';
 
 const postImage = 'https://picsum.photos/';
 
 export const PostsList = () => {
-  const [posts, setPosts] = useState([]);
-
-  const fetchPost = async () => {
-    const response = await axios.get('http://localhost:3001/posts', {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    setPosts(response.data);
-  };
-
-  const deletePost = async (id) => {
-    await axios.delete(`http://localhost:3001/posts/${id}`, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    const updatedPost = posts.filter((post) => {
-      return post.id !== id;
-    });
-
-    setPosts(updatedPost);
-  };
+  const { deletePost, getPost, posts } = useContext(BlogContext);
 
   useEffect(() => {
-    fetchPost();
-  }, []);
+    getPost();
+  }, [getPost]);
 
   return (
     <div className="postsList">
