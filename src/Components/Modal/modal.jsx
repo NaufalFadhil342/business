@@ -1,27 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import '../../Styles/modal.css';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
 import { Button } from '../Button/button';
 import { Form } from './form';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { BlogContext } from '../Blog/Context/blogContext';
 
-export const Modal = ({ onCloseModal, posts, setPosts }) => {
-  const createPost = async (title, description) => {
-    const data = new FormData();
-
-    data.append('title', title);
-    data.append('description', description);
-
-    const response = await axios.post('http://localhost:3001/posts', data, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    const updatedPosts = [...posts, response.data];
-    setPosts(updatedPosts);
-  };
+export const Modal = ({ onCloseModal }) => {
+  const { createPost } = useContext(BlogContext);
 
   useEffect(() => {
     document.body.classList.add('overflow-hidden');

@@ -4,7 +4,6 @@ import { Modal } from '../../../Modal/modal';
 
 export const CreatePost = () => {
   const [showModal, setShowModal] = useState(false);
-  const [posts, setPosts] = useState([]);
 
   const openModal = () => {
     setShowModal(true);
@@ -14,7 +13,7 @@ export const CreatePost = () => {
     setShowModal(false);
   };
 
-  const modal = <Modal onCloseModal={closeModal} posts={posts} setPosts={setPosts} />;
+  const modal = <Modal onCloseModal={closeModal} />;
 
   return (
     <div className="createPost">
