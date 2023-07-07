@@ -118,7 +118,7 @@
   display: flex;
   justify-content: flex-end;
   padding: 0 0 0 5%;
-  box-shadow: -2.5px 0 5px rgb(26, 26, 26, 0.1);
+  border-left: 1px solid silver;
 }
 
 @media screen and (max-width: 1024px) {
